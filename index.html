@@ -60,6 +60,8 @@
       isolation: isolate;
       backdrop-filter: saturate(120%) blur(8px);
     }
+
+    
     .card::before {
       content: "";
       position: absolute; inset: 0; z-index: -1;
@@ -127,6 +129,18 @@
       .color-swatch { display: none; }
       .brand-logo { width: 72px; height: 72px; border-radius: 14px; }
     }
+    .card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100px;
+  height: 170px;
+  background: url("imagens/confertina.png") no-repeat center center;
+  background-size: contain;
+  pointer-events: none;
+  z-index: 0;
+}
   </style>
 </head>
 <body>
@@ -194,7 +208,7 @@
           icon: "tiktok",
         },
         {
-          label: "Loja no Mercado Livre",
+          label: "Mercado Livre",
           hint: "Compre com segurança",
           url: "https://www.mercadolivre.com.br/pagina/confeart#from=share_eshop",
           key: "meli",
